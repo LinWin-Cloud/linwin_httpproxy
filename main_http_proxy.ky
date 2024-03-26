@@ -1,0 +1,8 @@
+import "http_proxy"
+import "config"
+
+var http_proxy = new(http_proxy)
+http_proxy.set_port(config.port())
+http_proxy.set_target(config.proxy_url())
+print("INFORMATION.\n -PORT=",config.port(),"\n -PROXY=",config.proxy_url())
+http_proxy.run()
