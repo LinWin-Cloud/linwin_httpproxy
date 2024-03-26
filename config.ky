@@ -1,0 +1,18 @@
+
+var proxy_url = "https://www.bing.com/"
+var start_port = 8080
+
+
+
+
+
+
+
+
+func port() public
+	return start_port
+end_func
+
+func proxy_url() public
+	return proxy_url
+end_func
